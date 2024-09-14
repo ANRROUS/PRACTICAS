@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="IMG/logo_1.png">
+    <script src="script.js"></script>
+    <title>Tarea01</title>
+</head>
+<body>
+    <header>
+        <h1>Mis tareas</h1>
+    </header>
+    <p id="saludo">
+        ¡Hola! Te presento una página de tareas sencilla y práctica, donde podrás organizar tus actividades de manera eficiente. Podrás marcar cada tarea como pendiente o completada, lo que te ayudará a llevar un mejor control de tu lista de pendientes y realizar un seguimiento de tu progreso.
+    </p>
+    <div class="contenedor_padre">
+        <div class="task_container">
+            <label for="nombre_tarea">Ingrese el nombre de la tarea:</label>
+            <input type="text" id="texto">
+            <button type="button" onclick="agregar()">AGREGAR</button>
+        </div>
+    </div>
+    <div class="contenedor_padre">
+        <div class="task_container">
+            <div class="head_contenedor">
+                <img src="IMG/logo_1.png" alt="Icono de tareas">
+                <h3>
+                    Tareas
+                </h3>
+            </div>
+            <div class="task" id="tareas_general">
+            </div>
+        </div>
+        <div class="task_container">
+            <div class="head_contenedor">
+                <img src="IMG/logo_completadas.png" alt="Icono de tareas">
+                <h3>
+                    Tareas Completadas
+                </h3>
+            </div>
+            <div class="task" id="tareas_completadas">
+            </div>
+        </div>
+        <div class="task_container">
+            <div class="head_contenedor">
+                <img src="IMG/logo_pendientes.png" alt="Icono de tareas">
+                <h3>
+                    Tareas Pendientes
+                </h3>
+            </div>
+            <div class="task" id="tareas_pendientes">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
